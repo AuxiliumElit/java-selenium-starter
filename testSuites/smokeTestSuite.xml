@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+
+    <groups>
+        <run>
+            <include name="ContactUsPageSmokeTest"/>
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="com.example.javaseleniumstarter.testComponents.TestNgListeners"></listener>
+    </listeners>
+
+    <test thread-count="5" name="Demo Test One">
+        <classes>
+            <class name="com.example.javaseleniumstarter.testCasesTestNg.DemoTestTestNg">
+            </class>
+        </classes>
+    </test>
+    <test thread-count="5" name="Demo Test Two">
+        <classes>
+            <class name="com.example.javaseleniumstarter.testCasesTestNg.DemoTestTestNg2">
+            </class>
+        </classes>
+    </test>
+</suite>

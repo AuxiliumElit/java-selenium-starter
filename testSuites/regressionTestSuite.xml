@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+
+    <listeners>
+        <listener class-name="com.example.javaseleniumstarter.testComponents.TestNgListeners"></listener>
+    </listeners>
+
+
+    <test thread-count="5" name="Demo Test One">
+        <classes>
+            <class name="com.example.javaseleniumstarter.testCasesTestNg.DemoTestTestNg">
+                <methods>
+                    <include name="runDemoTestWithTestNg1"/>
+                    <include name="runDemoTestWithTestNg2"/>
+                    <include name="runDemoTestWithTestNg3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test thread-count="5" name="Demo Test Two">
+        <classes>
+            <class name="com.example.javaseleniumstarter.testCasesTestNg.DemoTestTestNg2">
+                <methods>
+                    <include name="runDemoTestWithTestNg4"/>
+                    <include name="runDemoTestWithTestNg5"/>
+                    <include name="runDemoTestWithTestNg6"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
